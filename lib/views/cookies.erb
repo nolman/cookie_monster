@@ -1,0 +1,25 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div class='header'>
+      <img src='/cookie_monster.jpg' />
+    </div>
+    <div id='cookies'>
+      <div div style="font-weight:bold; font:20px;">PASSWORDS</div>
+      <% @passwords.each do |login, password| %>
+        <div class="password">
+          <div style="font-weight:bold;">Here's a login/password:</div>
+          <div><%= login %>/<%= password %></div>
+        </div>
+      <% end %>
+      <div div style="font-weight:bold; font:20px;">COOKIES</div>
+      <% @cookies.each do |cookie| %>
+        <div class="cookie">
+          <div style="font-weight:bold;">Here's a Cookie:</div>
+          <div><%= cookie %></div>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>
